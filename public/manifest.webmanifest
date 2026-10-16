@@ -1,0 +1,15 @@
+{
+  "name": "VYORA — AI Fitness",
+  "short_name": "VYORA",
+  "description": "Workouts, nutrition tracking, meal planning and an AI coach.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#090B0A",
+  "theme_color": "#090B0A",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
