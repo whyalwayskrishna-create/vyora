@@ -2,8 +2,11 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 import AppShell from "@/components/layout/AppShell";
+import PwaRegister from "@/components/layout/PwaRegister";
 
 export const metadata: Metadata = {
+  manifest: "/manifest.webmanifest",
+  icons: { icon: "/icon-192.png", apple: "/icon-192.png" },
   title: "VYORA — Move Smarter. Live Stronger.",
   description: "VYORA is an AI-powered fitness and nutrition platform: workouts, animated exercise demos, calorie & macro tracking, meal planning and an AI coach.",
 };
@@ -20,6 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <style>{`:root{--font-jakarta:"Plus Jakarta Sans"}`}</style>
       </head>
       <body className="font-sans antialiased">
+        <PwaRegister />
         <AppShell>{children}</AppShell>
       </body>
     </html>
